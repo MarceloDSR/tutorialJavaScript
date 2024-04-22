@@ -98,7 +98,91 @@ const idade = 33;
 
 ## Tipos de Dados
 
-## funções
+1. **String**: Sequência de caracteres, representada por aspas simples ou duplas.
+   ```
+   let nome = "Ana";
+   ```
+
+2. **Number**: Números inteiros ou decimais.
+   ```
+   let idade = 25;
+   let preco = 10.99;
+   ```
+
+3. **Boolean**: Valor lógico que pode ser verdadeiro ou falso.
+   ```
+   let estaChovendo = true;
+   ```
+
+4. **Null**: Representa a ausência intencional de qualquer valor ou objeto.
+   ```
+   let endereco = null;
+   ```
+
+5. *Undefined*: Indica que uma variável foi declarada, mas ainda não foi atribuída a um valor.
+   ```
+   let telefone;
+   ```
+
+6. *Object*: Conjunto de propriedades-chave associadas a valores.
+   ```
+   let pessoa = { nome: "João", idade: 30 };
+   ```
+
+7. *Array*: Coleção ordenada de valores, que podem ser de diferentes tipos.
+   ```
+   let listaDeCompras = ["maçã", "banana", "laranja"];
+   ```
+
+8. **Symbol**: Tipo de dado primitivo que é único e imutável.
+   ```
+   let chavePrivada = Symbol();
+   ```
+   Esses são os principais tipos de dados em JavaScript. Cada tipo tem suas    próprias características e usos específicos.
+## Funções
+
+Em JavaScript, as funções são blocos de código que podem ser executados quando são chamados. Elas podem aceitar argumentos e retornar valores. Aqui está um exemplo simples de como declarar e usar funções em JavaScript:
+
+```
+// Declaração de uma função simples
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
+
+// Chamando a função e armazenando o resultado em uma variável
+let mensagem = saudacao("Marcelo");
+console.log(mensagem); // Saída: Olá, Marcelo!
+```
+```
+// Função que não retorna valor (undefined)
+function mostrarMensagem() {
+    console.log("Esta é uma mensagem de exemplo.");
+}
+
+mostrarMensagem(); // Saída: Esta é uma mensagem de exemplo.
+```
+```
+// Função com múltiplos parâmetros e retorno
+function soma(a, b) {
+    return a + b;
+}
+
+let resultado = soma(5, 3);
+console.log(resultado); // Saída: 8
+
+```
+Além disso, você também pode declarar funções como expressões de função:
+
+```
+// Expressão de função
+let quadrado = function(x) {
+    return x * x;
+};
+
+console.log(quadrado(3)); // Saída: 9
+
+```
+As funções em JavaScript são flexíveis e poderosas, e podem ser usadas de várias maneiras para modularizar e organizar o seu código.
 
 ## Estruturas de Controle
 
