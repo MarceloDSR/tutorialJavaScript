@@ -31,8 +31,8 @@ Seguindo esses passos, você deve ter um ambiente de desenvolvimento JavaScript 
 1. **Variáveis**: Declare variáveis usando var, let ou const, seguido pelo nome da variável e, opcionalmente, um valor inicial. Exemplo: 
    
 ```
-let nome = "Marcelo";
-const idade = 33;
+   let nome = "Marcelo";
+   const idade = 33;
 ```
 
 2. **Comentários**: Use // para comentários de uma linha e /* */ para comentários de várias linhas. Exemplo:
@@ -40,8 +40,8 @@ const idade = 33;
 ```
    // Este é um comentário de uma linha
    /* Este é
-      um comentário
-      de várias linhas */
+   um comentário
+   de várias linhas */
 ```
 
 3. **Tipos de Dados**: JavaScript possui tipos de dados como `string`, `number`, `boolean`, `null`, `undefined`, `object` e `symbol`.
@@ -186,4 +186,106 @@ As funções em JavaScript são flexíveis e poderosas, e podem ser usadas de v�
 
 ## Estruturas de Controle
 
+Em JavaScript, as estruturas de controle permitem controlar o fluxo de execução do seu código. Aqui estão algumas das estruturas de controle mais comuns:
+
+1. **if...else**: Permite executar um bloco de código se uma condição for verdadeira e outro bloco de código se a condição for falsa.
+   ```
+   let idade = 18;
+   if (idade >= 18) {
+       console.log("Maior de idade");
+   } else {
+       console.log("Menor de idade");
+   }
+   ```
+
+2. **switch**: Permite selecionar um dos muitos blocos de código para serem executados.
+   ```
+   let diaDaSemana = 3;
+   switch (diaDaSemana) {
+       case 1:
+           console.log("Segunda-feira");
+           break;
+       case 2:
+           console.log("Terça-feira");
+           break;
+       // outros casos...
+       default:
+           console.log("Dia não reconhecido");
+   }
+   ```
+
+3. **for**: Executa um bloco de código várias vezes, com base em uma condição.
+   ```
+   for (let i = 0; i < 5; i++) {
+       console.log(i);
+   }
+   ```
+
+4. **while**: Executa um bloco de código enquanto uma condição específica for verdadeira.
+   ```
+   let contador = 0;
+   while (contador < 5) {
+       console.log(contador);
+       contador++;
+   }
+   ```
+
+5. **do...while**: Similar ao while, mas garante que o bloco de código seja executado pelo menos uma vez antes de verificar a condição.
+   ```
+   let x = 0;
+   do {
+       console.log(x);
+       x++;
+   } while (x < 5);
+   ```
+
+6. **for...in**: Itera sobre as propriedades de um objeto.
+   ```
+   let carro = { marca: "Toyota", modelo: "Corolla", ano: 2020 };
+   for (let chave in carro) {
+       console.log(chave + ": " + carro[chave]);
+   }
+   ```
+
+Essas são algumas das estruturas de controle mais comuns em JavaScript, que permitem controlar o fluxo de execução do seu código de forma eficiente e flexível.
 ## Eventos e Manipulação do DOM
+
+Em JavaScript, eventos são ações que ocorrem no navegador, como clique do mouse, pressionamento de tecla, carregamento da página, etc. A manipulação do DOM (Document Object Model) refere-se à interação com os elementos HTML de uma página web. Aqui está uma visão geral de como lidar com eventos e manipular o DOM em JavaScript:
+
+1. **Adicionar Event Listeners**: Use o método `addEventListener` para vincular uma função a um evento específico em um elemento HTML.
+   ```
+   document.getElementById("meuBotao").addEventListener("click", function() {
+       alert("Botão clicado!");
+   });
+   ```
+
+2. **Manipulação do DOM**: Use métodos como `getElementById`, `getElementsByClassName`, `getElementsByTagName` ou `querySelector` para selecionar elementos HTML e manipulá-los.
+   ```
+   // Alterar o conteúdo de um elemento
+   document.getElementById("meuDado").innerHTML = "Novo texto";
+
+   // Alterar o estilo de um elemento
+   document.getElementById("minhaDiv").style.backgroundColor = "red";
+   ```
+
+3. **Eventos de Carregamento da Página**: Você pode executar código quando a página é carregada usando o evento `DOMContentLoaded`.
+   ```
+   document.addEventListener("DOMContentLoaded", function() {
+       // Código a ser executado após o carregamento da página
+   });
+   ```
+
+4. **Acesso aos Elementos do Formulário**: Use `value` para acessar ou alterar o valor de um elemento de formulário.
+   ```
+   let nome = document.getElementById("nome").value;
+   ```
+
+5. **Prevenir Comportamento Padrão**: Você pode usar `preventDefault()` para evitar o comportamento padrão de um evento, como enviar um formulário ou seguir um link.
+   ```
+   document.getElementById("meuLink").addEventListener("click", function(event) {
+       event.preventDefault();
+       // Outro código aqui
+   });
+   ```
+
+Esses são apenas alguns exemplos de como você pode lidar com eventos e manipular o DOM em JavaScript. Com essas técnicas, você pode criar interações dinâmicas e responsivas em suas páginas web.
