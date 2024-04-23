@@ -1,5 +1,5 @@
 # Tutorial de Introdução ao JavaScript
-![1_ahpxPO0jLGb9EWrY2qQPhg](https://github.com/MarceloDSR/tutorialJavaScript/assets/133075234/85e51d04-aae6-423c-a1d8-d9a5835c068e)
+![javascript](https://github.com/MarceloDSR/tutorialJavaScript/assets/133075234/6c3b98c0-346a-4750-a732-abac4fe7f295)
 
 ## O que iremos aprender?
 
